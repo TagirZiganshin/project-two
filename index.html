@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page" />
+    <!-- <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_RU" />
+    <meta name="keywords" content="you keywords" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="you name" /> -->
+    <title>Document</title>
+    <link rel="stylesheet" as="style" href="css/main.css" />
+    <script src="https://unpkg.com/@builder.io/partytown@latest"></script>
+    <script>
+      // Настройка Partytown
+      window.partytown = {
+        forward: ["dataLayer.push"], // Перенаправление вызовов
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="section-outher section-header">
+      <div
+        class="section-inner section-inner--wide section-inner--padding-vertical-sm"
+      >
+        <nav class="nav" role="navigation">
+          <a href="#" class="nav__logo" aria-label="Home page">logo</a>
+          <button
+            class="btn-primary btn-burger"
+            aria-label="Open menu"
+            onclick="toggleMenu()"
+          >
+            <span class="btn-burger__line"></span>
+            <span class="btn-burger__line"></span>
+            <span class="btn-burger__line"></span>
+          </button>
+          <div class="nav__inner-wrap">
+            <a href="#" class="nav__link" aria-label="Sounds page">Sounds</a>
+            <a href="#" class="nav__link" aria-label="Skills page">Skills</a>
+            <a href="#" class="nav__link" aria-label="Plugins page">Plugins</a>
+            <a href="#" class="nav__link" aria-label="Studio page">Studio</a>
+            <a href="#" class="nav__link" aria-label="Community page"
+              >Community</a
+            >
+            <a href="#" class="nav__link" aria-label="Blog page">Blog</a>
+            <a href="#" class="nav__link" aria-label="Pricing page">Pricing</a>
+          </div>
+          <div class="nav__auth-wrapper">
+            <a href="#" class="nav__auth" aria-label="Login">Login</a>
+            <button class="nav__btn" aria-label="Sign up">Sign up</button>
+          </div>
+        </nav>
+
+        <!-- Mobile menu that will be shown when burger button is clicked -->
+        <div class="nav__mobile-menu">
+          <a href="#" class="nav__link">Sounds</a>
+          <a href="#" class="nav__link">Skills</a>
+          <a href="#" class="nav__link">Plugins</a>
+          <a href="#" class="nav__link">Studio</a>
+          <a href="#" class="nav__link">Community</a>
+          <a href="#" class="nav__link">Blog</a>
+          <a href="#" class="nav__link">Pricing</a>
+          <a href="#" class="nav__auth">Login</a>
+          <button class="nav__btn">Sign up</button>
+        </div>
+      </div>
+    </header>
+    <!-- / header -->
+    <main>
+      <!-- get-free-sounds -->
+      <section class="section-outher section-get-free-sounds">
+        <div
+          class="section-inner section-inner--narrow section-inner--padding-vertical-sm"
+        >
+          <div class="section-get-free-sounds__item">
+            <p>
+              🤘 Get free Sounds when you start a trial & 4 months off a Sounds+
+              annual plan.
+            </p>
+            <a
+              href="#"
+              class="section-get-free-sounds__link"
+              aria-label="Click-here"
+              >Click here</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- / get-free-sounds -->
+
+      <!-- playground -->
+      <section class="section-playground">
+        <img
+          src="./img/IMAGE.webp"
+          alt="Preview image"
+          class="playground-preview"
+          width="996"
+          height="617"
+          loading="eager"
+        />
+        <div class="section-inner">
+          <div class="section-playground__wrapper">
+            <h1>Step into the producer’s producer’s</h1>
+            <h2>
+              Explore the world’s best sample library and an unmatched
+              marketplace of plugins and DAWs.
+            </h2>
+            <button class="btn-primary" onclick="startFreeTrial()">
+              Try free
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- / playground -->
+
+      <!-- sounds -->
+      <section class="section-outher section-sounds">
+        <div class="section-inner section-inner--padding-only-top">
+          <div class="cards">
+            <div class="cards__wrapper">
+              <h2>A catalog so deep, it’s dangerous.</h2>
+              <h3>Sounds</h3>
+              <p>
+                Expertly created and curated samples in any style imaginable.
+                Start swimming in sound.
+              </p>
+              <button class="btn-primary" href="#">Explore Sounds</button>
+            </div>
+            <div class="cards__image">
+              <img
+                src="./img/IMAGE-1.webp"
+                alt="loading"
+                loading="lazy"
+                width="580"
+                height="386"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / sounds -->
+
+      <!-- connected-experience -->
+      <section class="section-outher section-connected-experience">
+        <div class="section-inner section-inner--padding-only-top">
+          <div class="cards cards--reverse">
+            <div class="cards__wrapper cards__wrapper--text-end">
+              <h2>A workflow that actually flows.</h2>
+              <h3>Connected Experience</h3>
+              <p class="item">
+                Preview samples in your track’s key and tempo, drag and drop
+                sounds into your DAW, and organize your favorite samples, MIDI
+                and presets in one place.
+              </p>
+            </div>
+            <div class="cards__image">
+              <img
+                src="./img/IMAGE-2.webp"
+                alt="loading"
+                loading="lazy"
+                width="579"
+                height="386"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / connected-experience -->
+
+      <!-- gear -->
+      <section class="section-outher section-gear">
+        <div class="section-inner section-inner--padding-only-top">
+          <div class="cards">
+            <div class="cards__wrapper">
+              <h2>Build a drool-worthy studio, affordably.</h2>
+              <h3>Gear</h3>
+              <p>
+                The industry’s top software, all in one place, on payment plans
+                built to work for you.
+              </p>
+              <button class="btn-primary btn-primary--small" href="#">
+                Explore Gear
+              </button>
+            </div>
+            <div class="cards__image">
+              <img
+                src="./img/IMAGE-3.webp"
+                alt="loading"
+                loading="lazy"
+                width="580"
+                height="386"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / gear -->
+
+      <!-- technology -->
+      <section class="section-outher section-technology">
+        <div class="section-inner section-inner--padding-only-top">
+          <div class="cards cards--reverse">
+            <div class="cards__wrapper cards__wrapper--text-end">
+              <h2>Crate dig without the dust.</h2>
+              <h3>Technology</h3>
+              <p>
+                Our intelligent search tools help you discover sounds you would
+                normally have to dig to find. Tech breaks the sweat, not you.
+              </p>
+              <button class="btn-primary btn-primary--small" href="#">
+                Discover CoSo
+              </button>
+            </div>
+            <div class="cards__image">
+              <img
+                src="./img/IMAGE-4.webp"
+                alt="loading"
+                loading="lazy"
+                width="579"
+                height="386"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / technology -->
+
+      <!-- creators -->
+      <section class="section-outher section-creators">
+        <div class="section-inner">
+          <h3>What creators are saying about Splice</h3>
+          <div class="section-creators__wrapper">
+            <div class="section-creators__card">
+              <div class="section-creators__card__img">
+                <img
+                  src="./img/IMAGE-5.webp"
+                  alt="loading"
+                  loading="lazy"
+                  width="220"
+                  height="220"
+                />
+              </div>
+              <p class="creator-quote">
+                I can always find what I’m looking for on Splice, whether it’s
+                the exact sound I want or just a bit of inspiration.
+              </p>
+              <p>Andrew Huang</p>
+            </div>
+            <div class="section-creators__card">
+              <div class="section-creators__card__img">
+                <img
+                  src="./img/IMAGE-6.webp"
+                  alt="loading"
+                  loading="lazy"
+                  width="220"
+                  height="220"
+                />
+              </div>
+              <p class="creator-quote">
+                Finally a way to buy plugins that works. By paying a little at a
+                time, producers can get legit access to the top VSTs.
+              </p>
+              <p>KSHMR</p>
+            </div>
+            <div class="section-creators__card">
+              <div class="section-creators__card__img">
+                <img
+                  src="./img/IMAGE-7.webp"
+                  alt="loading"
+                  loading="lazy"
+                  width="220"
+                  height="220"
+                />
+              </div>
+              <p class="creator-quote">
+                It’s been fun to dive into Splice’s creator community and
+                explore tools that support my own creative process.
+              </p>
+              <p>Kesha Lee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / creators -->
+    </main>
+    <!-- today -->
+    <footer class="section-today">
+      <img
+        src="./img/IMAGE-8.webp"
+        alt="Preview-image"
+        class="playground-preview"
+        width="1200"
+        height="auto"
+        loading="lazy"
+      />
+      <div class="section-inner section-inner--padding-vertical-xl">
+        <h2>Try Splice today</h2>
+        <button class="btn-primary" href="#">Start now</button>
+      </div>
+    </footer>
+    <!-- / today -->
+    <script>
+      function toggleMenu() {
+        const mobileMenu = document.querySelector(".nav__mobile-menu");
+        mobileMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
